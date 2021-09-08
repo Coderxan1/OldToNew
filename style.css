@@ -1,0 +1,62 @@
+body{
+    font-family: sans-serif;
+    background: #3C3B3F;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.backg{
+    min-height: 100vh;
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.image_cont{
+    height: 100vh;
+    width: 100vw;
+    background: brown;
+    position: relative;
+}
+
+.image_cont img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s linear;
+}
+
+.bw{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.slider{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+}
+
+.slider button{
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background: yellow;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.btncolor{
+    background: grey;
+}

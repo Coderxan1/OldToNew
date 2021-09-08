@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old To New</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="backg">
+        <div class="image_cont">
+            <img src="./images/mac.jpeg" alt="" id="image">
+            <div class="slider">
+                <button id="change">To <span id="text">B/W</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let change_btn = document.querySelector("#change");
+        let text = document.getElementById('text');
+        let image_identifier = document.querySelector("#image");
+        change_btn.onclick = () =>{
+            if(text.innerHTML === 'B/W'){
+                text.innerHTML = 'fancy';
+                // image_identifier.classList.toggle('bw');
+            }else{
+                text.innerHTML = 'B/W';
+            }
+            image_identifier.classList.toggle('bw');
+        }
+    </script>
+</body>
+</html>
